@@ -1,0 +1,11 @@
+POST http://localhost:3000/admin/registro
+Content-Type: application/json
+
+{
+    "nombre": "Jose",
+    "apellido": "Lopez",
+    "usuario": "Josema",
+    "correo": "Josema@gamil.com",
+    "password": "123456",
+    "tipo": "admin" 
+}
