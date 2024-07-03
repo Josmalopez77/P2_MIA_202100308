@@ -1,11 +1,26 @@
-POST http://localhost:3000/admin/registro
-Content-Type: application/json
+# POST http://localhost:3000/admin/registro
+# Content-Type: application/json
 
-{
-    "nombre": "Jose",
-    "apellido": "Lopez",
-    "usuario": "Josema",
-    "correo": "Josema@gamil.com",
-    "password": "123456",
-    "tipo": "admin" 
-}
+# {
+#     "nombre": "Jose3",
+#     "apellido": "Lopez3",
+#     "usuario": "Josema",
+#     "correo": "Josema@gamil.com",
+#     "password": "123456",
+#     "tipo": "admin"
+# }
+
+ GET http://192.168.0.30/admin/mostrarVuelos
+
+# GET http://192.168.0.30/admin/getUsuarios
+
+# POST http://localhost:3000/admin/registroVuelos
+# Content-Type: application/json
+
+# {
+#     "nombre": "Avianca",
+#     "origen": "Lopez",
+#     "destino": "Josema",
+#     "dias": "Josema@gamil.com",
+#     "precio": "123456"
+# }

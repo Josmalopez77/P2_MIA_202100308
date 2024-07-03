@@ -1,0 +1,81 @@
+<main>
+    <div class="container">
+  
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+  
+              <div class="d-flex justify-content-center py-4">
+                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                  <img src="assets/img/logo.png" alt="">
+                  <span class="d-none d-lg-block">TURISTA</span>
+                </a>
+              </div><!-- End Logo -->
+  
+              <div class="card mb-3">
+  
+                <div class="card-body">
+  
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">BIENVENIDO TURISTA</h5>
+                    <p class="text-center small">Ingresa tu usuario y contrasena</p>
+                  </div>
+  
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Agencia</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Dias</th>
+                            <th>Vuelo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let vuelo of vuelos">
+                          <td>{{vuelo.nombre}}</td>
+                          <td>{{vuelo.origen}}</td>
+                          <td>{{vuelo.destino}}</td>
+                          <td>{{vuelo.dias}}</td>
+                          <td>{{vuelo.precio}}</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th>Agencia</th>
+                          <th>Marca</th>
+                          <th>Placa</th>
+                          <th>Modelo</th>
+                          <th>precio</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let auto of autos">
+                            <td>{{auto.nombre}}</td>
+                            <td>{{auto.marca}}</td>
+                            <td>{{auto.placa}}</td>
+                            <td>{{auto.modelo}}</td>
+                            <td>{{auto.precio}}</td>
+                          
+                      </tr>
+                  </tbody>
+              </table>
+  
+  
+  
+                </div>
+              </div>
+  
+  
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+  </main><!-- End #main -->
